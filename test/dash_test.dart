@@ -6,7 +6,7 @@ void main() {
   testWidgets('Dash widget has correct length and color',
       (WidgetTester tester) async {
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: Scaffold(
           body: DashLine(
             length: 200.0,
