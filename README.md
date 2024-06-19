@@ -6,10 +6,6 @@ A simple customizable shaped widget for Flutter.
 
 ### Single Dot Widget
 
-### Dash Line Widget
-
-### Triangle Widget
-
 ```dart
 import 'package:shapes_widget/shaped_widget/single_dot.dart';
 
@@ -20,6 +16,11 @@ Dot(
   borderWidth: 2.0,
 );
 
+```
+
+### Dash Line Widget
+
+```dart
 import 'package:shapes_widget/shaped_widget/dash_line.dart';
 
 Dash(
@@ -30,6 +31,11 @@ Dash(
   dashGap: 3.0,
 );
 
+```
+
+### Triangle Widget
+
+```dart
 import 'package:shapes_widget/shaped_widget/triangle.dart';
 
 Triangle(
