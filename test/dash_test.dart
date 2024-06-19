@@ -3,7 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shapes_widget/shapes_widget.dart';
 
 void main() {
-  testWidgets('Dash widget has correct length and color', (WidgetTester tester) async {
+  testWidgets('Dash widget has correct length and color',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(

@@ -3,7 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shapes_widget/shapes_widget.dart';
 
 void main() {
-  testWidgets('Dot widget has correct size and color', (WidgetTester tester) async {
+  testWidgets('Dot widget has correct size and color',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(
         home: Scaffold(

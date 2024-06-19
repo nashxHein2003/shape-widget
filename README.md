@@ -2,6 +2,15 @@
 
 A simple customizable shaped widget for Flutter.
 
+## Installation
+
+Add `shapes_widget` to your `pubspec.yaml`:
+
+````yaml
+dependencies:
+  shapes_widget:
+    version: ^1.0.1
+
 ## Usage
 
 ### Single Dot Widget
@@ -16,7 +25,7 @@ Dot(
   borderWidth: 2.0,
 );
 
-```
+````
 
 ### Dash Line Widget
 
@@ -47,3 +56,11 @@ Triangle(
 );
 
 ```
+
+### Explanation
+
+- **Installation**: Clearly instructs users how to add `shapes_widget` to their Flutter project by specifying the version (`^1.0.1`). This version range (`^1.0.1`) allows users to automatically fetch compatible versions up to, but not including, `2.0.0`.
+
+- **Version**: Provides a dedicated section where users can easily reference the recommended version to use in their `pubspec.yaml`.
+
+Including this section makes your README.md more informative and user-friendly, ensuring that developers understand how to integrate and stay updated with the latest version of your `shapes_widget` package.

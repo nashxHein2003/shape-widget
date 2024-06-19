@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 
 /// A widget that represents a single dot.
+///
+/// This widget is commonly used to indicate a point or mark in a graphical user interface.
+/// The dot can be customized with size, color, and an optional border.
+///
+/// Example:
+///
+/// ```dart
+/// SingleDot(
+///   size: 20.0,
+///   color: Colors.blue,
+///   borderColor: Colors.red,
+///   borderWidth: 2.0,
+/// );
+/// ```
 class SingleDot extends StatelessWidget {
   /// The size of the dot.
   final double size;
@@ -36,7 +50,9 @@ class SingleDot extends StatelessWidget {
       decoration: BoxDecoration(
         color: color,
         shape: BoxShape.circle,
-        border: borderColor != null ? Border.all(color: borderColor!, width: borderWidth) : null,
+        border: borderColor != null
+            ? Border.all(color: borderColor!, width: borderWidth)
+            : null,
       ),
     );
   }

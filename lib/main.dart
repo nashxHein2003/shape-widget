@@ -1,42 +1,33 @@
 import 'package:flutter/material.dart';
-import 'package:shapes_widget/shapes_widget.dart';
 
+/// The main entry point for the application.
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
+/// The main application widget.
+///
+/// This widget is the root of your application.
 class MyApp extends StatelessWidget {
+  /// Creates the main application widget.
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Shapes Widget Example',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
       home: Scaffold(
-        appBar: AppBar(title: const Text('Shape Widgets Example')),
-        body: Center(
+        appBar: AppBar(
+          title: const Text('Shapes Widget Example'),
+        ),
+        body: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const SingleDot(
-                size: 20.0,
-                color: Colors.blue,
-                borderColor: Colors.red,
-                borderWidth: 2.0,
-              ),
-              const SizedBox(height: 20),
-              DashLine(
-                length: 100.0,
-                thickness: 2.0,
-                color: Colors.green,
-                dashLength: 5.0,
-                dashGap: 3.0,
-              ),
-              const SizedBox(height: 20),
-              Triangle(
-                size: 50.0,
-                color: Colors.orange,
-                isEquilateral: true,
-                borderWidth: 1.0,
-                borderColor: Colors.black,
-              ),
+            children: <Widget>[
+              // Your example widgets go here
             ],
           ),
         ),

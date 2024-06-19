@@ -1,36 +1,45 @@
 import 'package:flutter/material.dart';
 
-/// A widget that draws a dashed line.
+/// A widget for drawing dashed lines.
+///
+/// This widget creates a line with dashes of specified length and gap.
+///
+/// Example:
+///
+/// ```dart
+/// DashLine(
+///   length: 100.0,
+///   thickness: 2.0,
+///   color: Colors.blue,
+///   dashLength: 5.0,
+///   dashGap: 3.0,
+/// );
+/// ```
 class DashLine extends StatelessWidget {
-  /// The length of the dashed line.
+  /// The length of the dash line.
   final double length;
 
-  /// The thickness of the dashed line.
+  /// The thickness of the dash line.
   final double thickness;
 
-  /// The color of the dashed line.
+  /// The color of the dash line.
   final Color color;
 
-  /// The length of each dash segment.
+  /// The length of each dash.
   final double dashLength;
 
-  /// The gap between each dash segment.
+  /// The gap between each dash.
   final double dashGap;
 
-  /// Creates a dashed line widget.
-  ///
-  /// The [length] parameter specifies the total length of the dashed line.
-  /// The [thickness] parameter specifies the thickness of the dashed line.
-  /// The [color] parameter specifies the color of the dashed line.
-  /// The [dashLength] parameter specifies the length of each dash segment.
-  /// The [dashGap] parameter specifies the gap between each dash segment.
-  DashLine({
+  /// Creates a dash line widget.
+  const DashLine({
+    Key? key,
     this.length = 100.0,
     this.thickness = 2.0,
     this.color = Colors.black,
     this.dashLength = 5.0,
     this.dashGap = 3.0,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -46,27 +55,22 @@ class DashLine extends StatelessWidget {
   }
 }
 
-/// The custom painter for drawing the dashed line.
+/// Painter for the DashLine widget.
 class DashPainter extends CustomPainter {
-  /// The color of the dashed line.
+  /// The color of the dash line.
   final Color color;
 
-  /// The length of each dash segment.
+  /// The length of each dash.
   final double dashLength;
 
-  /// The gap between each dash segment.
+  /// The gap between each dash.
   final double dashGap;
 
-  /// The thickness of the dashed line.
+  /// The thickness of the dash line.
   final double thickness;
 
-  /// Creates a custom painter for drawing a dashed line.
-  ///
-  /// The [color] parameter specifies the color of the dashed line.
-  /// The [dashLength] parameter specifies the length of each dash segment.
-  /// The [dashGap] parameter specifies the gap between each dash segment.
-  /// The [thickness] parameter specifies the thickness of the dashed line.
-  DashPainter({
+  /// Creates a dash painter.
+  const DashPainter({
     required this.color,
     required this.dashLength,
     required this.dashGap,
