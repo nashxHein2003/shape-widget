@@ -13,6 +13,7 @@ void main() {
             color: Colors.blue,
             borderColor: Colors.red,
             borderWidth: 2.0,
+            gap: 7.0,
           ),
         ),
       ),

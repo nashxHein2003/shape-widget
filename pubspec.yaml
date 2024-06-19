@@ -1,5 +1,5 @@
 name: shapes_widget
-description: A collection of customizable Flutter widgets for drawing shapes such as dots, dashed lines, and triangles.
+description: A collection of customizable Flutter widgets for drawing shapes such as dots, triangle and star.
 version: 1.1.0
 homepage: https://github.com/nashxHein2003/shape-widget
 license: MIT
