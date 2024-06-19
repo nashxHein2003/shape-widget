@@ -1,10 +1,11 @@
 name: shapes_widget
 description: simple customizable widgets for Flutter
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/nashxHein2003/shape-widget.git
+license: MIT
 
 environment:
-  sdk: ">=3.4.0 <4.0.0"
+  sdk: ">=2.12.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -15,12 +16,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
-
-flutter:
-  plugin:
-    platforms:
-      android:
-        package: com.example.shape_widgets
-        pluginClass: ShapeWidgetsPlugin
-      ios:
-        pluginClass: ShapeWidgetsPlugin
