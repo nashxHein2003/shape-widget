@@ -1,4 +1,4 @@
-## [1.0.2] - YYYY-MM-DD
+## [1.0.4] - YYYY-MM-DD
 
 ### Added
 

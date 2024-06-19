@@ -6,10 +6,11 @@ A simple customizable shaped widget for Flutter.
 
 Add `shapes_widget` to your `pubspec.yaml`:
 
-````yaml
+```yaml
 dependencies:
   shapes_widget:
-    version: ^1.0.1
+    version: ^1.0.4
+```
 
 ## Usage
 
@@ -25,7 +26,7 @@ Dot(
   borderWidth: 2.0,
 );
 
-````
+```
 
 ### Dash Line Widget
 
